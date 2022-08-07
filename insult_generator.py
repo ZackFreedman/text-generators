@@ -1,7 +1,6 @@
 import math
 import random
 import time
-import os
 from main_insults import *
 from shakespearean_insults import *
 
@@ -98,5 +97,4 @@ if __name__ == '__main__':
         last_insult = hit_me(3, exclusions=last_insult, odds_of_adding_another_word=0.75)
         # last_insult = shake_me()
         print(last_insult)
-        # os.system(f'cmd /c "espeak -v en+f2 \"{last_insult}\""')
         time.sleep(0.5)
