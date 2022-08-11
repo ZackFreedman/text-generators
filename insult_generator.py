@@ -322,7 +322,7 @@ def hit_me(maximum_words=math.inf, exclusions="", odds_of_adding_another_word=0.
         dice_roll = random.random()
 
         output += get_an_adjective(dice_roll < odds_of_adding_another_word, exclusions=(output + exclusions))
-        if output[-1] is not '-':
+        if output[-1] != '-':
             output += ' '
 
         word_count += 1
