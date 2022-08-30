@@ -253,7 +253,6 @@ insultingVerbs = [
 
 def pick_candidate(words, exclusions):
     if random.random() < 0.02:
-        # print('hee hee I broke the rules')
         return random.choice(words)
 
     candidates = [word for word in words if word not in exclusions]
